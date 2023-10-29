@@ -30,7 +30,7 @@ const formatMessage: MessageFormatter = (id, options = {}) => {
 
   const {
     values,
-    locale = getCurrentLocale(),
+    locale = messageObj.locale || getCurrentLocale(),
     default: defaultValue,
   } = messageObj;
 
